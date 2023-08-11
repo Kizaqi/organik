@@ -1,0 +1,29 @@
+.hero {
+  background: url(../img/Background-hero.jpg) no-repeat;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 94px);
+  &::before {
+    content: '';
+    background: url(../img/front-hero.png) no-repeat;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: calc(100vh - 94px);
+  }
+  &__content {
+    position: absolute;
+    max-width: 535px;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    padding: 10px;
+    transform: translate(0, -50%);
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+}

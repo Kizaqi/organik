@@ -1,0 +1,38 @@
+.about {
+  background: url(../img/about-us.png) no-repeat;
+  width: 100%;
+  min-height: 867px;
+  background-size: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  .content {
+    position: absolute;
+    max-width: 702px;
+    width: 100%;
+    right: 0%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    padding: 77px;
+    border-radius: 30px;
+    background: white;
+    p {
+      max-width: 600px;
+      line-height: 27px;
+    }
+    .items {
+      display: flex;
+      align-items: center;
+      .name {
+        margin-left: 19px;
+        color: $color-first;
+        p {
+          max-width: 444px;
+        }
+      }
+    }
+    a {
+      margin-top: 44px;
+    }
+  }
+}

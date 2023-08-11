@@ -1,0 +1,44 @@
+.subscribe {
+  margin: 250px 0;
+  &__rows {
+    padding: 105px 71px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: url(../img/subscribe.png) no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    h2 {
+      max-width: 352px;
+      width: 100%;
+    }
+    .email-form {
+      display: flex;
+      padding: 28px 29px;
+      border-radius: 16px;
+      ::placeholder {
+        color: #ababab;
+        font-size: 18px;
+        font-style: italic;
+      }
+      input {
+        padding: 28px 29px;
+        border-radius: 16px;
+        padding-right: 100px;
+      }
+      button {
+        max-width: 220px;
+        width: 100%;
+        margin-left: 8px;
+        background: $color-first;
+        color: white;
+        padding: 0 77px;
+        &:hover {
+          transition: 0.5s ease all;
+          color: $color-secondary;
+          background: $color-first;
+        }
+      }
+    }
+  }
+}

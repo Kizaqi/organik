@@ -1,0 +1,113 @@
+.type {
+  padding: 187px 0;
+  overflow: hidden;
+  &__rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .items {
+      position: relative;
+      background: url(../img/type-01.jpg) no-repeat;
+      background-position: center;
+      max-width: 612px;
+      width: 100%;
+      min-height: 583px;
+      top: 0;
+      left: 0;
+      transition: 0.5s ease all;
+
+      .button {
+        position: absolute;
+        max-width: 320px;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: white;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      &:hover {
+        position: relative;
+        z-index: 5;
+        transition: 0.5s ease all;
+        transform: scale(1.1);
+        .button {
+          transition: 0.5s ease all;
+          color: $color-secondary;
+          background: $color-first;
+        }
+      }
+    }
+  }
+}
+.news {
+  &__rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+
+    h2 {
+      max-width: 702px;
+      padding-right: 5px;
+    }
+    .button {
+      align-items: center;
+      justify-content: space-between;
+      transition: 0.5s ease all;
+      &:hover {
+        transition: 0.5s ease all;
+        color: $color-secondary;
+        background: $color-first;
+      }
+    }
+    .fifty-fifty {
+      padding: 10px;
+      margin: 10px;
+      box-sizing: border-box;
+    }
+    .image-container {
+      position: relative;
+      img {
+        border-radius: 30px;
+        max-width: 683px;
+        width: 100%;
+      }
+      .date {
+        position: absolute;
+        top: 38px;
+        left: 32px;
+      }
+    }
+    .text-overlay {
+      position: absolute;
+      background: white;
+      padding: 46px 57px 60px;
+      top: 50%;
+      right: 7%;
+      border-radius: 30px;
+      span {
+        color: $color-first;
+        font-size: 18px;
+      }
+      h4 {
+        margin-top: 15px;
+      }
+      i {
+        color: #efd372;
+      }
+      p {
+        max-width: 444px;
+        color: #525c60;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.food {
+  margin-top: 145px;
+  padding-bottom: 145px;
+
+  .rows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .fifty-fifty {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .image-container {
+    position: relative;
+    img {
+      border-radius: 30px;
+      max-width: 683px;
+      width: 100%;
+    }
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    padding: 10px;
+    max-width: 278px;
+  }
+}
