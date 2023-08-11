@@ -1,6 +1,7 @@
 .offer {
   background: $color-first;
   padding: 200px 5px;
+  overflow: hidden;
 
   .rows {
     display: flex;
@@ -15,6 +16,7 @@
   }
 }
 .story {
+  overflow: hidden;
   &__rows {
     display: flex;
     .fifty-fifty {
